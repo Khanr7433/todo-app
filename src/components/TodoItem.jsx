@@ -58,7 +58,6 @@ const TodoItem = ({ todo }) => {
           </div>
         </div>
 
-        {/* Todo Text */}
         <div className="flex-1">
           <input
             type="text"
@@ -80,9 +79,7 @@ const TodoItem = ({ todo }) => {
           />
         </div>
 
-        {/* Action Buttons */}
         <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          {/* Edit Button */}
           <button
             className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 text-lg ${
               todo.completed
@@ -100,7 +97,7 @@ const TodoItem = ({ todo }) => {
             disabled={todo.completed}
             title={isTodoEditable ? "Save changes" : "Edit task"}
           >
-            {isTodoEditable ? "�" : "✏️"}
+            {isTodoEditable ? "💾" : "✏️"}
           </button>
 
           {/* Delete Button */}
